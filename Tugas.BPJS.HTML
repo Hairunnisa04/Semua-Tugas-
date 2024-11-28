@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Daftar Isian Peserta BPJS Kesehatan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .form-section {
+      border: 1px solid #000;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .form-section h3 {
+      margin: 0;
+      background-color: #e0e0e0;
+      padding: 5px;
+    }
+    .form-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .form-table td {
+      padding: 5px;
+      vertical-align: top;
+    }
+    .form-table input[type="text"] {
+      width: 100%;
+      padding: 5px;
+    }
+    .form-table input[type="checkbox"],
+    .form-table input[type="radio"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>FORMULIR DAFTAR ISIAN PESERTA
+    PEKERJA BUKAN PENERIMA UPAH DAN BUKAN PEKERJA
+    BADAN PENYELENGGARA JAMINAN SOSIAL KESEHATAN</h2>
+
+  <!-- Bagian Identitas Peserta -->
+  <div class="form-section">
+    <h3>IDENTITAS PESERTA</h3>
+    <table class="form-table" border="1">
+      <tbody><tr>
+        <td>1. Nomor Kartu Keluarga</td>
+        <td><input type="text" name="nomor_kk">
+        </td>
+      </tr>
+      <tr>
+        <td>2. NIK/KITAS/KITAP</td>
+        <td><input type="text" name="nik_kitas_kitap"></td>
+      </tr>
+      <tr>
+        <td>3. Nama Lengkap</td>
+        <td><input type="text" name="nama_lengkap"></td>
+      </tr>
+      <tr>
+        <td>4. Tempat dan Tanggal Lahir</td>
+        <td><input type="text" name="tempat_tanggal_lahir"></td>
+      </tr>
+      <tr>
+        <td>5. Jenis Kelamin</td>
+        <td>
+          <label><input type="radio" name="jenis_kelamin" value="1"> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin" value="2"> Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td>6. Status Pernikahan</td>
+        <td>
+          <label><input type="radio" name="status_pernikahan" value="1"> Kawin</label>
+          <label><input type="radio" name="status_pernikahan" value="2"> Belum Kawin</label>
+          <label><input type="radio" name="status_pernikahan" value="3"> Janda</label>
+          <label><input type="radio" name="status_pernikahan" value="4"> Duda</label>
+        </td>
+      </tr>
+      <tr>
+        <td>7. Alamat Tempat Tinggal</td>
+        <td>
+          <input type="text" name="alamat">
+          <br>
+          <label>RT:</label> <input type="text" name="rt" style="width: 50px;">
+          <label>RW:</label> <input type="text" name="rw" style="width: 50px;">
+        </td>
+      </tr>
+      <tr>
+        <td>Kabupaten/Kota</td>
+        <td><input type="text" name="kabupaten_kota"></td>
+      </tr>
+      <tr>
+        <td>8. Nomor Telepon</td>
+        <td><input type="text" name="nomor_telepon"></td>
+      </tr>
+      <tr>
+        <td>9. Kewarganegaraan</td>
+        <td>
+          <label><input type="radio" name="kewarganegaraan" value="1"> WNI</label>
+          <label><input type="radio" name="kewarganegaraan" value="2"> WNA</label>
+        </td>
+      </tr>
+      <tr>
+        <td>10. Jumlah Iuran yang Dibayar</td>
+        <td><input type="text" name="jumlah_iuran" placeholder="Rp."></td>
+      </tr>
+      <tr>
+      <td>11. Nomor Passport</td>
+        <td><input type="text" name="Nomor_Passport"></td>
+      </tr>
+        <td>12. No Polis Asuransi Kesehatan</td>
+        <td><input type="text" name="No_Polis_Asuransi_Kesehatan"></td>
+       <tr>
+      <td>13. No. NPWP</td>
+        <td><input type="text" name="No._NPWP"></td>
+      </tr>
+      <tr>
+      <td>14.Nama Perusahaan Asuransi</td>
+        <td><input type="text" name="Nama_Perusahaan_Asuransi"></td>
+      </tr>
+      <tr>
+      <td>15.Alamat Email</td>
+        <td><input type="text" name="Alamat_Email"></td>
+      </tr>
+      <tr>
+      <td>16. Nama Faskes Tingkat Pertama</td>
+        <td><input type="text" name="Nama_Faskes_Tingkat_Pertama"></td>
+      </tr>
+      <tr>
+      <td>17. Nama Faskes Dokter Gigi</td>
+        <td><input type="text" name="Nama_Faskes_Dokter_Gigi"></td>
+      </tr>
+    </tbody></table>
+  </div>
+
+  <!-- Bagian Identitas Suami/Istri -->
+  <div class="form-section">
+    <h3>IDENTITAS SUAMI/ISTRI</h3>
+    <table class="form-table" border="1">
+      <tbody><tr>
+        <td>1. NIK/KITAS/KITAP</td>
+        <td>
+          <label><input type="text" name="nik_kitas_kitap_suami_istri"></label>
+        </td>
+      </tr>
+      <tr>
+        <td>2. Nama Lengkap</td>
+        <td><input type="text" name="nama_lengkap_suami_istri"></td>
+      </tr>
+      <tr>
+        <td>3. Tempat dan Tanggal Lahir</td>
+        <td><input type="text" name="tempat_tanggal_lahir_suami_istri"></td>
+      </tr>
+      <tr>
+        <td>4. Jenis Kelamin</td>
+        <td>
+          <label><input type="radio" name="jenis_kelamin_suami_istri" value="1"> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin_suami_istri" value="2"> Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td>5. Jumlah Iuran yang Dibayar</td>
+        <td><input type="text" name="jumlah_iuran_suami_istri" placeholder="Rp."></td>
+      </tr>
+      <tr>
+      <td>6. Nomor Passport</td>
+        <td><input type="text" name="Nomor_Passport"></td>
+      </tr>
+      <tr>
+      <td>7. No Polis Asuransi Kesehatan</td>
+        <td><input type="text" name="No_Polis_Asuransi_Kesehatan"></td>
+       </tr>
+       <tr>
+      <td>8.Nama Perusahaan Asuransi</td>
+        <td><input type="text" name="Nama_Perusahaan_Asuransi"></td>
+      </tr>
+      <tr>
+      <td>9.Nama Faskes Tingkat Pertama</td>
+        <td><input type="text" name="Nama_Faskes_Tingkat_Pertama"></td>
+      </tr>
+      <tr>
+      <td>10. Nama Faskes Dokter Gigi</td>
+        <td><input type="text" name="Nama_Faskes_Dokter_Gigi"></td>
+      </tr>
+
+    </tbody></table>
+  </div>
+
+  <!-- Bagian Identitas Anak -->
+  <div class="form-section">
+    <h3>IDENTITAS ANAK</h3>
+    <table class="form-table" border="1">
+      <tbody><tr>
+        <td>1. NIK/KITAS/KITAP</td>
+        <td><input type="text" name="nik_kitas_kitap_anak"></td>
+      </tr>
+      <tr>
+        <td>2. Nama Lengkap</td>
+        <td><input type="text" name="nama_lengkap_anak"></td>
+      </tr>
+      <tr>
+        <td>3. Tempat dan Tanggal Lahir</td>
+        <td><input type="text" name="tempat_tanggal_lahir_anak"></td>
+      </tr>
+      <tr>
+        <td>4. Jenis Kelamin</td>
+        <td>
+          <label><input type="radio" name="jenis_kelamin_anak" value="1"> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin_anak" value="2"> Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td>5. Jumlah Iuran yang Dibayar</td>
+        <td><input type="text" name="jumlah_iuran_anak" placeholder="Rp."></td>
+      </tr>
+       <tr>
+      <td>6. Nomor Passport</td>
+        <td><input type="text" name="Nomor_Passport"></td>
+      </tr>
+      <tr>
+      <td>7. No Polis Asuransi Kesehatan</td>
+        <td><input type="text" name="No_Polis_Asuransi_Kesehatan"></td>
+       </tr>
+       <tr>
+      <td>8.Nama Perusahaan Asuransi</td>
+        <td><input type="text" name="Nama_Perusahaan_Asuransi"></td>
+      </tr>
+      <tr>
+      <td>9.Nama Faskes Tingkat Pertama</td>
+        <td><input type="text" name="Nama_Faskes_Tingkat_Pertama"></td>
+      </tr>
+      <tr>
+      <td>10. Nama Faskes Dokter Gigi</td>
+        <td><input type="text" name="Nama_Faskes_Dokter_Gigi"></td>
+      </tr>
+
+    </tbody></table>
+  </div>
+
+  <!-- Submit Button -->
+  <div>
+    <button type="submit">Kirim</button>
+  </div>
+
+
+
+</body></html>
